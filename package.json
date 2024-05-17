@@ -1,0 +1,32 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build && vite build --ssr"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.3",
+        "@maqe-vue/pagination": "^1.0.2",
+        "@popperjs/core": "^2.9.2",
+        "axios": "^0.21.1",
+        "bootstrap": "^5.2.0",
+        "chart.js": "^2.9.4",
+        "core-js": "^3.10.1",
+        "vite": "^4.0.0",
+        "vue": "^3.2.41",
+        "vue-chartjs": "^3.5.1",
+        "vue-notification": "^1.3.20",
+        "vuex": "^3.6.2"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "vue-template-compiler": "^2.6.11",
+        "@inertiajs/vue3": "^1.0.8",
+        "@tailwindcss/forms": "^0.5.3",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "@vue/server-renderer": "^3.2.31",
+        "autoprefixer": "^10.4.12",
+        "laravel-vite-plugin": "^0.7.2",
+        "lodash": "^4.17.19"
+    }
+}
