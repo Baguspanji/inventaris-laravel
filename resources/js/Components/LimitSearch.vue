@@ -8,12 +8,16 @@ const props = defineProps({
         type: Object,
         default: () => ({}),
     },
+    route: {
+        type: String,
+        default: '',
+    },
 });
 
 let search = ref(props.filters.search);
 watch(search, (value) => {
     router.get(
-        "/blogs",
+        `/${props.route}`,
         { search: value },
         {
             preserveState: true,
@@ -22,10 +26,10 @@ watch(search, (value) => {
     );
 });
 
-let limit = ref(props.filters.limit);
+let limit = ref(props.filters.limit || 10);
 watch(limit, (value) => {
     router.get(
-        "/blogs",
+        `/${props.route}`,
         { limit: value },
         {
             preserveState: true,

@@ -15,6 +15,17 @@
     @routes
     @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
     @inertiaHead
+
+    <script>
+        const BASE_URL = "{{ url('') }}";
+        const TOKEN = "{{ csrf_token() }}"
+    </script>
+    <script type="text/javascript">
+        window.Laravel = {
+            csrfToken: "{{ csrf_token() }}",
+            jsPermissions: {!! auth()->check() ? 1 : 0 !!}
+        }
+    </script>
 </head>
 
 <body class="font-sans antialiased">

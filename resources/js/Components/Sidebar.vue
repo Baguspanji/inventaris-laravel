@@ -9,18 +9,18 @@ const appName = window.document.getElementsByTagName('title')[0]?.innerText || '
     <nav id="sidebar" class="sidebar">
         <div class="sidebar-content js-simplebar">
             <a class="sidebar-brand" href="#">
-                <Link :href="route('dashboard')">
+                <Link :href="route('home')">
                 <ApplicationLogo style="width: 40px; color: #FFF !important;" />
                 <span class="align-middle text-white"
-                    style="margin-left: 14px; font-size: 24px; text-transform: uppercase;">{{ appName }}</span>
+                    style="margin-left: 14px; font-size: 24px; text-transform: uppercase;">Inventaris</span>
                 </Link>
             </a>
 
             <ul class="sidebar-nav">
                 <!-- <li class="sidebar-header">Pages</li> -->
 
-                <li class="sidebar-item" :class="{ 'active': route().current('welcome') }">
-                    <Link :href="route('welcome')" class="sidebar-link">
+                <li class="sidebar-item" :class="{ 'active': route().current('home') }">
+                    <Link :href="route('home')" class="sidebar-link">
                     <i class="fas fa-tachometer-alt align-middle"></i>
                     <span class="align-middle">Dashboard</span>
                     </Link>
@@ -41,10 +41,10 @@ const appName = window.document.getElementsByTagName('title')[0]?.innerText || '
                     </ul>
                 </li> -->
 
-                <li class="sidebar-item" :class="{ 'active': route().current('blogs.index') }">
-                    <Link :href="route('blogs.index')" class="sidebar-link">
+                <li class="sidebar-item" :class="{ 'active': route().current('item.index') }">
+                    <Link :href="route('item.index')" class="sidebar-link">
                     <i class="fas fa-bars align-middle"></i>
-                    <span class="align-middle">Blog</span>
+                    <span class="align-middle">Barang</span>
                     </Link>
                 </li>
             </ul>

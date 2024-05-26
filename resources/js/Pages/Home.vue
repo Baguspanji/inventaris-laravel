@@ -9,11 +9,11 @@ defineProps({
 </script>
 
 <template>
-    <Head title="Welcome" />
+    <Head title="Dashboard" />
 
     <AdminLayout>
         <div class="col-auto d-none d-sm-block">
-            <h3>Analytics Dashboard</h3>
+            <h3>Dashboard</h3>
         </div>
     </AdminLayout>
 
